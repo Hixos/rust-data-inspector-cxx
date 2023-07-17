@@ -1,5 +1,5 @@
 [package]
-name = "rust-lib"
+name = "plotter-cxx"
 version = "0.1.0"
 edition = "2021"
 
@@ -10,6 +10,8 @@ crate-type = ["staticlib"]
 [dependencies]
 cxx = "1.0.100"
 plotter = { git = "https://github.com/Hixos/rust-data-inspector.git" }
+eframe = "0.22.0"
+rand = "0.8.5"
 
 [build-dependencies]
 cxx-build = "1.0"

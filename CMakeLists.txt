@@ -20,11 +20,11 @@ FetchContent_MakeAvailable(Corrosion)
 
 include(cmake/corrosion_cxx.cmake)
 set(Rust_CARGO_TARGET x86_64-unknown-linux-gnu)
-add_library_rust(PATH rust-lib NAMESPACE rust)
+add_library_rust(PATH plotter-cxx NAMESPACE rust)
 
 add_executable(main src/main.cpp)
 
 target_link_libraries(main
   PUBLIC
-  rust::rust-lib
+  rust::plotter-cxx
 )
